@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Project04.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Home</h2>
+            <img src="Project04.jfif" alt="Profile Photo" class="profile-photo">
+            <h1>Hello, I'm Maniraj</h1>
+            <p style="font-size: large;">I'm a web developer specializing in creating dynamic and responsive websites. I turn ideas into beautiful, functional websites.</p>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <img src="Project04.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>The Project Is To Create a websites for The College Using the HTML, CSS And The Java Script. I Hope That  This Project is Very Useful For Me to Learn Basics Of The HTML,CSS And Java Script. </Script></p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch with me at <a href="mailto:raj237@gmail.com">raj237@gmail.com</a>.</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p style="font-size: large;">I'm Maniraj ,I am a Web developer  </p>
+            <h2>Background</h2>
+            <p style="font-size: large;">I am From Coimbatore And I Am Completed the Bachelor Degree On Paavendhar Institution and Passed out At 2026.</p>
+            <h2>Education</h2>
+            <p style="font-size: large;">I am Recently Completed the Bachelor Degree on Paavendhar Institution With 76 Percentage of CGPA  </p>
+            <h2>Professional Experience</h2>
+            <p style="font-size: large;">I'm A Fresher And I have No Experience in My Profession. I've 1 Month Experience In The Intership Time And I've The Certification of the Internship.</p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Smooth scrolling for navigation links
+            const links = document.querySelectorAll('nav a');
+    
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent default anchor behavior
+                    const targetId = this.getAttribute('href'); // Get the target ID
+                    const targetElement = document.querySelector(targetId);
+    
+                    if (targetElement) {
+                        // Smooth scroll to the target element
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+    
+                    // Optional: Show alert for contact link
+                    if (targetId === '#contact') {
+                        alert('Feel free to get in touch with me at raj237@gmail.com');
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="Project04.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+</body>
+</html>
